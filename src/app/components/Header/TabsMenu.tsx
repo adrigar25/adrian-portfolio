@@ -107,7 +107,7 @@ export default function TabsMenu() {
         system: "Sistema",
       }[theme],
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5 ">
           {(() => {
             switch (theme) {
               case "light":
@@ -138,31 +138,32 @@ export default function TabsMenu() {
         radius="full"
         variant="light"
         color="primary"
+        size="lg"
         selectedKey={`${selectedTab}`}
         className={`backdrop-blur-lg rounded-full transition-all border border-white dark:${shadowOpacity ? '' : 'border-hidden border-default-50'} duration-300 ${shadowOpacity ? 'shadow-lg  border-default-300' : 'shadow-none'}`}
         onSelectionChange={handleTabChange}
       >
         <Tab
           key="home"
-          className="cursor-none transition-transform transform hover:scale-105 w-auto text-[65%] lg:text-md lg:px-4"
+          className="cursor-none transition-transform transform hover:scale-105 text-[85%] font-semibold lg:text-md lg:px-4"
           value="home"
           title="Inicio"
         />
         <Tab
           key="studies"
-          className="cursor-none transition-transform transform hover:scale-105 w-auto text-[65%] lg:text-md lg:px-4"
+          className="cursor-none transition-transform transform hover:scale-105 text-[85%] font-semibold lg:text-md lg:px-4"
           value="studies"
           title="Estudios"
         />
         <Tab
           key="projects"
-          className="cursor-none transition-transform transform hover:scale-105 w-auto text-[65%] lg:text-md lg:px-4"
+          className="cursor-none transition-transform transform hover:scale-105 text-[85%] font-semibold lg:text-md lg:px-4"
           value="projects"
           title="Proyectos"
         />
         <Tab
           key="aboutme"
-          className="cursor-none transition-transform transform hover:scale-105 w-auto text-[65%] lg:text-md lg:px-4"
+          className="cursor-none transition-transform transform hover:scale-105 text-[85%] font-semibold lg:text-md lg:px-4"
           value="aboutme"
           title="Sobre mí"
         />
@@ -171,6 +172,7 @@ export default function TabsMenu() {
         isIconOnly
         onClick={() => setTheme(theme === "light" ? "dark" : theme === "dark" ? "system" : "light")}
         radius="full"
+        size="lg"
         color="default"
         variant="light"
         className={`backdrop-blur-lg rounded-full transition-all border border-white dark:${shadowOpacity ? '' : 'border-hidden border-default-50'} duration-300 ${shadowOpacity ? 'shadow-lg  border-default-300' : 'shadow-none'}`}

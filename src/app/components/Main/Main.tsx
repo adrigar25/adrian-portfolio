@@ -10,7 +10,7 @@ export default function Main() {
       <section className="section scroll-m-20 w-full mx-auto lg:max-w-4xl md:max-w-lg max-w-sm flex flex-col gap-4" id="home">
         <section className="section undefined scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl flex flex-col gap-4">
           <div className="flex flex-row items-center gap-4 ">
-            <Image src="./profile.webp" alt="Profile picture" className="rounded-full shadow-sm shadow-default-500" width={64} height={64} />
+            <Image src="/profile.webp" alt="Profile picture" className="rounded-full shadow-sm shadow-default-500" width={64} height={64} />
             <Button
               size="sm"
               radius="full"
