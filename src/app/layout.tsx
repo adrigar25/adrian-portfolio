@@ -27,7 +27,7 @@ export default function RootLayout({
     <html lang="es">
 
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased h-full`}
       >
         <div className="cursor">
           <div className="circle"></div>
