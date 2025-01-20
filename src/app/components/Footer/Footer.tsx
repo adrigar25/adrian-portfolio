@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Button, Tooltip } from "@nextui-org/react";
+import { Tooltip } from "@nextui-org/react";
 
 export default function Footer() {
   return (
