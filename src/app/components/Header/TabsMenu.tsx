@@ -132,13 +132,13 @@ export default function TabsMenu() {
   const { content, icon } = getTooltipContent();
 
   return (
-    <div className="fixed z-10 w-full flex justify-center mt-6 flex flex-row gap-2">
+    <div className="fixed z-10 w-full flex justify-center items-center mt-6 flex flex-row gap-2 sm:mt-2">
       <Tabs
         shouldSelectOnPressUp
         radius="full"
         variant="light"
         color="primary"
-        size="lg"
+        size="md"
         selectedKey={`${selectedTab}`}
         className={`backdrop-blur-lg rounded-full transition-all border border-white dark:${shadowOpacity ? '' : 'border-hidden border-default-50'} duration-300 ${shadowOpacity ? 'shadow-lg  border-default-300' : 'shadow-none'}`}
         onSelectionChange={handleTabChange}

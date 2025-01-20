@@ -22,7 +22,7 @@ export default function AboutMe() {
                         Mi objetivo es <span className="text-blue-500">aprender y crecer</span> en el campo del desarrollo web, contribuyendo con <span className="text-blue-500">soluciones eficientes y efectivas</span>.
                     </p>
                 </div>
-                <Image src="./profile.webp" alt="Profile picture" className="z-1 rounded-2xl h-64 w-64 shadow-sm shadow-default-500" />
+                <Image src="/profile.webp" alt="Profile picture" className="z-1 rounded-2xl h-64 w-64 shadow-sm shadow-default-500" />
             </div>
         </section>
 

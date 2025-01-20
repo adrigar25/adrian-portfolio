@@ -1,4 +1,4 @@
-import { Button, Card, Chip, Image } from '@nextui-org/react';
+import { Button, Card, Chip, Image, Tooltip } from '@nextui-org/react';
 
 export default function Projects() {
   return (
@@ -18,9 +18,9 @@ export default function Projects() {
           <div className='flex flex-col lg:flex-row gap-4'>
             <Image
               alt="Powerfuel"
-              src="./powerfuel.webp"
-              width="1000"
-              height={200}
+              src="/powerfuel.webp"
+              width="auto"
+              height="auto"
               className='rounded-xl shadow-lg  z-0'
             />
             <div className='flex flex-col gap-2 h-full'>
@@ -32,7 +32,7 @@ export default function Projects() {
                     startContent={
                       <Image
                         alt='Next.js'
-                        src="./nextjs.webp" width={18} height={18} className='rounded-full z-0' />
+                        src="/nextjs.webp" width={18} height={18} className='rounded-full z-0' />
                     }
                   >
                     Next.js
@@ -41,7 +41,7 @@ export default function Projects() {
                     startContent={
                       <Image
                         alt='NextUI'
-                        src="./nextui.webp" width={18} height={18} className='rounded-full z-0' />
+                        src="/nextui.webp" width={18} height={18} className='rounded-full z-0' />
                     }
                   >
                     NextUI
@@ -50,7 +50,7 @@ export default function Projects() {
                     startContent={
                       <Image
                         alt='Tailwind CSS'
-                        src="./tailwindcss.webp" width={18} height={18} className='rounded-full z-0 p-[10%]' />
+                        src="/tailwindcss.webp" width={18} height={18} className='rounded-full z-0 p-[10%]' />
                     }
                   >
                     Tailwind CSS
@@ -59,7 +59,7 @@ export default function Projects() {
                     startContent={
                       <Image
                         alt='Node.js'
-                        src="./nodejs.webp" width={18} height={18} className='rounded-full z-0' />
+                        src="/nodejs.webp" width={18} height={18} className='rounded-full z-0' />
                     }
                   >
                     Node.js
@@ -68,7 +68,7 @@ export default function Projects() {
                     startContent={
                       <Image
                         alt='Express'
-                        src="./expressjs.webp" width={18} height={18} className='rounded-full z-0' />
+                        src="/expressjs.webp" width={18} height={18} className='rounded-full z-0' />
                     }
                   >
                     Express
@@ -77,7 +77,11 @@ export default function Projects() {
                     startContent={
                       <Image
                         alt='MySQL'
-                        src="./mysql.webp" width={18} height={18} className='rounded-full z-0 bg-opacity-100 bg-white dark:bg-none bg-opacity-100 dark:bg-opacity-0 p-[10%] dark:p-0' />
+                        src="/mysql.webp"
+                        width={18}
+                        height={18}
+                        className='rounded-full z-0 bg-opacity-100 bg-white dark:bg-none bg-opacity-100 dark:bg-opacity-0 p-[10%] dark:p-0'
+                      />
                     }
                   >
                     MySQL
@@ -90,7 +94,7 @@ export default function Projects() {
                   </p>
                 </div>
               </div>
-              <div className='h-full justify-center'>
+              <div className='h-full justify-start items-center flex flex-row gap-2'>
                 <Button
                   className="hover:scale-105 transition-transform bg-blue-500 text-white border-blue-500 hover:bg-blue-300 hover:text-black py-2 gap-1 text-[75%] lg:text-sm"
                   radius="full"
@@ -103,6 +107,22 @@ export default function Projects() {
                 >
                   Ver código
                 </Button>
+
+                <Tooltip
+                  content="Descargar"
+                  color='primary'
+                >
+                  <Button
+                    radius='full'
+                    as="a"
+                    href="/docs/PowerFuel_Adrian_Garcia_Torrente__Adrian_Escribano_Perez.pdf"
+                    download
+                    className='hover:scale-105 transition-transform bg-blue-500 text-white border-blue-500 hover:bg-blue-300 hover:text-black py-2 gap-1 text-[75%] lg:text-sm'
+                    color="primary"
+                  >
+                    Documentación
+                  </Button>
+                </Tooltip>
               </div>
             </div>
           </div>
