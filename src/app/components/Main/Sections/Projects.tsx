@@ -115,7 +115,7 @@ export default function Projects() {
                   <Button
                     radius='full'
                     as="a"
-                    href="/docs/PowerFuel_Adrian_Garcia_Torrente__Adrian_Escribano_Perez.pdf"
+                    href="./docs/PowerFuel_Adrian_Garcia_Torrente__Adrian_Escribano_Perez.pdf"
                     download
                     className='hover:scale-105 transition-transform bg-blue-500 text-white border-blue-500 hover:bg-blue-300 hover:text-black py-2 gap-1 text-[75%] lg:text-sm'
                     color="primary"
